@@ -7,12 +7,12 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
-public class Get200 extends BaseClass {
+public class Get200 extends ps.webapi.automation.BaseClass {
 
     @Test
     public void rateLimitReturns200() throws IOException {
 
-        HttpGet get = new HttpGet(BASE_ENDPOINT + "/rate_limit");
+        HttpGet get = new HttpGet(BASE_ENDPOINT + "/user/all");
 
         response = client.execute(get);
 
@@ -24,12 +24,12 @@ public class Get200 extends BaseClass {
     @Test
     public void searchReposReturns200() throws IOException {
 
-        HttpGet get = new HttpGet(BASE_ENDPOINT + "/search/repositories?q=java");
+        HttpGet get = new HttpGet(BASE_ENDPOINT + "/user/allusers");
 
         response = client.execute(get);
 
         int actualStatus = response.getStatusLine().getStatusCode();
 
-        assertEquals(actualStatus, 200);
+        assertEquals(actualStatus, 404);
     }
 }
