@@ -13,7 +13,7 @@ import java.io.IOException;
         CloseableHttpClient client;
         CloseableHttpResponse response;
 
-        protected static final String BASE_ENDPOINT = "http://localhost:8080/swagger-ui.html#!";
+        protected static final String BASE_ENDPOINT = "http://localhost:8080";
 
         @BeforeMethod
         public void setup(){
