@@ -1,4 +1,4 @@
-package ps.webapi.automation;
+package WebApiAutomation;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.impl.client.CloseableHttpClient;
