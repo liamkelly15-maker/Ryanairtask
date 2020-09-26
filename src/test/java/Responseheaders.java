@@ -1,4 +1,4 @@
-package WebApiAutomation;
+package webapiautomation;
 
 import org.apache.http.client.methods.HttpGet;
 import org.testng.annotations.Test;
@@ -9,7 +9,7 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import java.util.Arrays;
 import java.util.List;
 
-public class Responseheaders extends WebApiAutomation.BaseClass {
+public class Responseheaders extends webapiautomation.BaseClass {
 
     public static String getHeader(CloseableHttpResponse response, String headerName) {
 

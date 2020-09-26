@@ -1,4 +1,4 @@
-package WebApiAutomation;
+package webapiautomation;
 
 import org.apache.http.client.methods.HttpGet;
 import org.testng.annotations.Test;
@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
-public class Get200 extends WebApiAutomation.BaseClass {
+public class Get200 extends webapiautomation.BaseClass {
 
     //test the GET user request exists
     @Test

@@ -10,5 +10,7 @@ API Testing
     Test API Headers
         Server name header
         Content-Type header
+        
+    Test response body 
     
 
