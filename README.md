@@ -1,7 +1,9 @@
 # Ryanairtask
 
 Create a MAVEN Java Project - Import the maven dependencies for the suite of Java Test Libraries 
-API Testing
+
+Ryanair API Testing Strategy
+
     Test API status codes
         200 : Endpoint exists
         404 : Endpoint not existing
@@ -22,6 +24,6 @@ API Testing
     
     Test POST option
         post a new user and look for response code 201
-        try to post the same user and look for error response code 403
+        try to post the same user and look for error response code 409
     
 

@@ -31,7 +31,7 @@ public class Posttoapi extends webapiautomation.BaseClass {
 
     //add the same user record and assert on a status code of 403
     @Test
-    public void postnewuser() throws IOException {
+    public void postsameuser() throws IOException {
 
         // Create an HttpPost with a valid Endpoint
         HttpPost request = new HttpPost(BASE_ENDPOINT + "/user");
@@ -44,7 +44,7 @@ public class Posttoapi extends webapiautomation.BaseClass {
         response = client.execute(request);
 
         int actualStatusCode = response.getStatusLine().getStatusCode();
-        Assert.assertEquals(actualStatusCode, 403);
+        Assert.assertEquals(actualStatusCode, 409);
     }
 
 }
