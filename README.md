@@ -21,5 +21,7 @@ API Testing
         send options request to determine which requests are supported 
     
     Test POST option
+        post a new user and look for response code 201
+        try to post the same user and look for error response code 403
     
 
