@@ -7,11 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
+
 
 public class Posttoapi extends webapiautomation.BaseClass {
 
+    //add a new user record and assert on a status code of 201
     @Test
     public void postnewuser() throws IOException {
 
@@ -19,7 +19,7 @@ public class Posttoapi extends webapiautomation.BaseClass {
         HttpPost request = new HttpPost(BASE_ENDPOINT + "/user");
 
         // Define Json to Post and set as Entity
-        String json = "{\"name\": \"liamkelly\"}";
+        String json = "{\"name\":\"liam\",\"id\":\"1\",\"bookings\":[],\"email\":\"liam@gmail.com\"}";
         request.setEntity(new StringEntity(json, ContentType.APPLICATION_JSON));
 
         // Send

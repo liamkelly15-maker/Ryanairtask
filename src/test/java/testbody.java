@@ -57,7 +57,7 @@ public class testbody extends webapiautomation.BaseClass {
 
         JSONObject jsonObject = new JSONObject(jsonBody3);
 
-        //System.out.println(jsonObject);
+        System.out.println(jsonObject);
 
         String userID = (String) getValueFor(jsonObject, "email");
 
