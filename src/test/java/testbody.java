@@ -48,6 +48,7 @@ public class testbody extends webapiautomation.BaseClass {
 
         String jsonBody = EntityUtils.toString(response.getEntity());
 
+        //modify the jsonBody string to allow conversion to JSON Object
         //System.out.println(jsonBody);
         String jsonBody2 = jsonBody.substring(1);
         //System.out.println(jsonBody2);

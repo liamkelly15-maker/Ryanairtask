@@ -9,7 +9,7 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import java.util.Arrays;
 import java.util.List;
 
-public class Responseheaders extends webapiautomation.BaseClass {
+public class responseheaders extends webapiautomation.BaseClass {
 
     public static String getHeader(CloseableHttpResponse response, String headerName) {
 
@@ -20,7 +20,7 @@ public class Responseheaders extends webapiautomation.BaseClass {
 
         // Loop over the headers list
         for(Header header : httpHeaders){
-            //System.out.println(header);
+            System.out.println(header);
             if(headerName.equalsIgnoreCase(header.getName())){
                 returnHeader = header.getValue();
 
@@ -29,7 +29,7 @@ public class Responseheaders extends webapiautomation.BaseClass {
         // If no header found - throw an exception
         if(returnHeader.isEmpty()){
             //throw new RuntimeException("Didn't find the header: " + headerName);
-            System.out.println("Didn't find the header: " + headerName+ "  - Test Failed");
+            //System.out.println("Didn't find the header: " + headerName+ "  - Test Failed");
         }
         // Return the header
         return returnHeader;
