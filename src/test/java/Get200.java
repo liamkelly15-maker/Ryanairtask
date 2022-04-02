@@ -13,7 +13,7 @@ public class Get200 extends webapiautomation.BaseClass {
     @Test
     public void getuserReturns200() throws IOException {
 
-        HttpGet get = new HttpGet(BASE_ENDPOINT + "/user?id=pepe%40pepe.pe1-0.1");
+        HttpGet get = new HttpGet(BASE_ENDPOINT);
 
         response = client.execute(get);
 
